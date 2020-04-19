@@ -29,7 +29,7 @@ const RightBar = () => {
                 <ul className={items}>
                     <li className={itemActive}>
                         <a className={ linkActive }
-                            href="/#"
+                            href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 News
@@ -38,7 +38,7 @@ const RightBar = () => {
                     </li>
                     <li className={item}>
                         <a className={ link }
-                            href="/#"
+                            href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 Photos
@@ -47,7 +47,7 @@ const RightBar = () => {
                     </li>
                     <li className={item}>
                         <a className={ link }
-                            href="/#"
+                            href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 Recommendations
@@ -56,7 +56,7 @@ const RightBar = () => {
                     </li>
                     <li className={item}>
                         <a className={ link }
-                            href="/#"
+                            href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 Search
@@ -65,7 +65,7 @@ const RightBar = () => {
                     </li>
                     <li className={item}>
                         <a className={ link }
-                           href="/#"
+                           href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 Updates
@@ -74,7 +74,7 @@ const RightBar = () => {
                     </li>
                     <li className={item}>
                         <a className={ link }
-                           href="/#"
+                           href="/social-network-header/"
                         >
                             <span className={ itemText }>
                                 Comments
@@ -84,10 +84,8 @@ const RightBar = () => {
                 </ul>
             </div>
             <div className={ filtersBlock }>
-                {/*<div className={filters}>Filters</div>*/}
                 <ul className={itemsFilters}>
                     <div className={filters}>Filters</div>
-
                     <li className={checkboxItem}>
                         <label className={label} >
                             <input type="checkbox" className={checkbox}/>

@@ -28,7 +28,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faHome} className={ icon }/>
                         <span className={ itemText }>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faNewspaper} className={ icon }/>
                         <span className={ itemText }>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faEnvelopeOpenText} className={ icon }/>
                         <span className={ itemText }>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faUserFriends} className={ icon }/>
                         <span className={ itemText }>
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faCamera} className={ icon }/>
                         <span className={ itemText }>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/#"
+                        href="/social-network-header/"
                     >
                         <FontAwesomeIcon icon={faUsers} className={ icon }/>
                         <span className={ itemText }>
