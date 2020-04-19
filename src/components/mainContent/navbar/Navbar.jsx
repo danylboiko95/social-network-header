@@ -28,7 +28,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faHome} className={ icon }/>
                         <span className={ itemText }>
