@@ -1,0 +1,241 @@
+.rightBar {
+    grid-area: right-bar;
+}
+
+.items,
+.itemsFilters {
+    list-style-type: none;
+    margin: 15px auto;
+    max-width: 220px;
+    width: 100%;
+    background-color: var(--post-content-bg-color);
+    border-radius: 4px;
+    box-shadow: var(--bar-box-shadow);
+    padding: 10px 0;
+}
+
+.item {
+    width: 100%;
+    align-self: stretch;
+    line-height: 2;
+}
+
+.item:hover {
+    background-color: var(--nav-hover-item-color);
+    border-radius: 2px;
+}
+
+.link {
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--font-content-color);
+    font-weight: 400;
+}
+
+.linkActive {
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--font-content-active-color);
+    font-weight: 400;
+}
+
+.itemActive {
+    background-color: var(--nav-hover-item-color);
+    width: 100%;
+    align-self: stretch;
+    line-height: 2;
+    border-left: var(--tab-border);
+}
+
+.itemText {
+    margin-left: 10px;
+}
+
+.checkboxItem {
+    margin-left: .9rem;
+    line-height: 2rem;
+    color: var(--font-content-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.label {
+    cursor: pointer;
+    display: flex;
+}
+
+.fake {
+    display: flex;
+    align-self: center;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--checkbox-default-color);
+    border-radius: .25rem;
+    box-sizing: border-box;
+}
+
+.fake::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    transform: translate(50% 50%);
+    border-radius: .25rem;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transition: .2s;
+    background-image: url('https://noxtelecom.nl/wp-content/uploads/2013/08/checked-checkbox-xxl-1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 50% 50%;
+    background-size: contain;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
+}
+
+.label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: .5rem;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+}
+
+.checkbox {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkboxText {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: .5rem;
+}
+
+.filters {
+    width: 75%;
+    margin-left: 1rem;
+    color: var(--font-content-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--font-content-color);
+}
+
+.filtersBlock {
+    grid-area: filters-block;
+}
+
+.rightMenuBlock {
+    grid-area: right-menu-block;
+}
+
+@media screen and (max-width: 768px) {
+    .rightBar {
+        max-width: 150px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .rightBar {
+        display: grid;
+        max-width: 680px;
+        margin: 0 auto;
+        grid-column: 2 / -1;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'right-menu-block filters-block';
+    }
+    .filtersBlock,
+    .rightMenuBlock {
+        max-width: 250px;
+        width: 100%;
+    }
+    .filtersBlock {
+        margin-top: 1.5rem;
+    }
+    .items,
+    .itemsFilters {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .itemsFilters {
+        margin: 0;
+    }
+
+    .itemActive {
+        border-left: none;
+        background-color: transparent;
+    }
+    .linkActive {
+        color: var(--font-content-color);
+    }
+
+    .linkActive,
+    .link,
+    .checkboxText {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .checkboxText {
+        margin-left: 1rem;
+    }
+    .fake,
+    .fake::before {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .rightBar {
+        max-width: 400px;
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and ( max-width: 375px ) {
+    .rightBar {
+        max-width: 300px;
+        grid-template-areas: 'right-menu-block' 'filters-block';
+        grid-template-columns: 1fr;
+    }
+
+    .items {
+        margin: 15px 0;
+    }
+
+    .itemsFilters {
+        max-width: 250px;
+    }
+
+    .rightMenuBlock,
+    .filtersBlock {
+        max-width: 300px;
+        width: 100%;
+        background-color: var(--post-content-bg-color);
+        border-radius: .125rem;
+    }
+    .filtersBlock {
+        margin-top: 0;
+    }
+
+    .filters {
+        width: 100%;
+    }
+}

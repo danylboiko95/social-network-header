@@ -1,0 +1,140 @@
+.postItem {
+    margin: 1rem auto 2rem;
+    background-color: var(--post-img-bg-color);
+}
+
+.postImgBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--post-img-bg-color);
+}
+
+.postImg {
+    max-width: 100%;
+    opacity: .8;
+}
+
+.postTextBlock {
+    background-color: var(--post-content-bg-color);
+    box-shadow: var(--post-content-shadow);
+    padding: 20px;
+}
+
+.postTitle {
+    color: var(--post-title-color);
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.socialBlock {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-around;
+    color: var(--social-post-text-color);
+    font-size: 1.2rem;
+    margin: 35px;
+}
+
+.socialBlockItem,
+.socialBlockItemLong {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 .9rem;
+    cursor: pointer;
+}
+
+.socialBlockItem {
+    flex-grow: 1;
+}
+.socialBlockItemLong {
+    flex-grow: 2;
+}
+
+.socialBlockItemText {
+    text-transform: uppercase;
+}
+
+.socialBlockItemIcon {
+
+}
+
+.postText {
+    text-align: justify;
+    color: var(--social-post-text-color);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+    .socialBlock {
+        flex-wrap: nowrap;
+        max-width: 380px;
+        width: 100%;
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+
+    .socialBlockItemIcon {
+        font-size: 1rem;
+    }
+
+    .socialBlockItemText {
+        margin-left: .5rem;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .postItem {
+        max-width: 650px;
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    .socialBlock {
+        max-width: 600px;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .socialBlockItemIcon {
+        font-size: 1.5rem;
+    }
+
+    .socialBlockItemText {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .postItem {
+        max-width: 400px;
+    }
+
+    .socialBlock {
+        display: grid;
+        max-width: 380px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .socialBlockItem {
+        max-width: 100px;
+    }
+    .socialBlockItem,
+    .socialBlockItemLong {
+        line-height: 2;
+    }
+    .postText {
+        padding: 1rem;
+    }
+}
+
+@media screen and ( max-width: 375px ) {
+    .postItem {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    grid-area: footer;
+    background-color: var(--header-main-bg-color);
+    color: var(--footer-text-color);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'text';
+    align-items: center;
+    text-align: center;
+}
+
+.footerText {
+    grid-area: text;
+}
