@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faNewspaper} className={ icon }/>
                         <span className={ itemText }>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faEnvelopeOpenText} className={ icon }/>
                         <span className={ itemText }>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faUserFriends} className={ icon }/>
                         <span className={ itemText }>
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faCamera} className={ icon }/>
                         <span className={ itemText }>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <li className={item}>
                     <a
                         className={link}
-                        href="/"
+                        href="/#"
                     >
                         <FontAwesomeIcon icon={faUsers} className={ icon }/>
                         <span className={ itemText }>
