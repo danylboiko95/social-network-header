@@ -31,6 +31,7 @@ const RightBar = () => {
                         <a className={ linkActive }
                             href="/social-network-header/"
                         >
+//возможно я не в контексте, но вместо href надо использовать link из библиотеки react-router-dom, если мы переходим по сайту
                             <span className={ itemText }>
                                 News
                             </span>
